@@ -16,7 +16,7 @@ body {
 .menu {
   padding: 1.1em;
   background-color: rgba(228, 221, 228, 1);
-  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  box-shadow: 3px 0 7px rgba(0, 0, 0, .3);
 }
 
 .menu::after {
@@ -54,10 +54,10 @@ body {
 }
 
 .menu__link:hover {
+  border-radius: 5px;
   background-color: rgba(36, 13, 57, 1);
   color: white;
   transform: scale(1.2);
-  border-radius: 5px;
 }
 
 @media (max-width: 660px) {
@@ -70,7 +70,7 @@ body {
     padding: 1.1em 0 0 0;
     text-align: center;
   }
-  
+
   .menu__link {
     padding: 0 0.5em;
   }
@@ -81,9 +81,3 @@ body {
     display: block;
   }
 }
-
-
-
-
-
-
