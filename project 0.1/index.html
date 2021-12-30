@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css\main.css" type="text/css" />
   </head>
   <body>
@@ -18,26 +19,46 @@
           <a class="menu__logo" href="index.html"><img src="https://html5book.ru/wp-content/uploads/2017/04/lily-logo.png" alt="Donut's logo"/></a>
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="" title="Информация о том, кто мы такие!">О нас</a>
+              <a class="menu__link" href="#" title="Информация о том, кто мы такие!">О нас</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="" title="Наше вкусное меню">Меню</a>
+              <a class="menu__link" href="#" title="Наше вкусное меню">Меню</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="" title="Магазин десертов">Магазин</a>
+              <a class="menu__link" href="#" title="Магазин десертов">Магазин</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="" title="Полезная информация">Блог</a>
+              <a class="menu__link" href="#" title="Полезная информация">Блог</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="" title="Свяжитесь с нами">Контакты</a>
+              <a class="menu__link" href="#" title="Свяжитесь с нами">Контакты</a>
             </li>
           </ul>
         </nav>
       </div>
-      <div class="button button-border">
-        <a href="#" class="header-subscribe"></a>
-      </div>
     </header>
+    <main>
+      <section class="fullscreen__bg">
+        <div class="overlay">
+          <h1>Welcome To Donut Art<br>Подпишитесь на наш журнал<br>там много интересного!<br></h1>
+          <a href="#"class="gradient-button">Подписаться</a>
+        </div>
+          <video id="myVideo" loop muted autoplay poster="../project 0.1/images/main__donut.jpg" class="fullscreen__bg__video">
+              <source src="video\main__video.mp4" type="video/mp4">
+              <source src="video\main__video--webm.webm" type="video/webm">
+              <p>Ваш браузер не поддерживает HTML5 видео.</p>
+          </video>
+      </section>
+      <div class="content">
+        <h2>OUR LINEUP</h2>
+        <p>From freshly made donuts and craveable breakfast items to our signature White Lightning, we’ve got a little bit of magic for everyone! Check out our selection below and ‘donut’ be a stranger — we’re always working on new varieties!</p>
+        <p>Like sprinkles on a chocolate glazed, these are the days of our lives...here’s the latest and greatest stuff we’ve been cooking up!</p>
+        <p>OUR STORY
+          Chicago donut history was made in 2014.
+          That’s when Rich Labriola of Labriola Baking Company opened the first Stan’s Donuts & Coffee in Chicago, the result of a friendship and partnership formed years earlier with Stan Berman, founder of the iconic Los Angeles shop that bore his name.
+          Today, there are multiple locations of Stan’s Donuts & Coffee in the Chicago area, serving a vast array of freshly made donuts, excellent coffee and whimsical experiences to a devoted community of donut lovers. Rich uses the same quality ingredients that he used in his bread, and that he uses at his other Doughboy Restaurant Group restaurants: fresh butter,
+          Stop by Stan’s today to try a baker’s dozen of our delectable donuts, incomparable coffee and tasty breakfast program.</p>
+      </div>
+    </main>
   </body>
 </html>
