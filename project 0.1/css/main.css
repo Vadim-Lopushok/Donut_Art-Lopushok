@@ -6,6 +6,7 @@
 
 body {
   background-size: cover;
+  font-size: 16px;
   font-family: "Cormorant Garamond", serif;
 }
 
@@ -13,8 +14,10 @@ body {
   width: 100%;
 }
 
+/*menu*/
+
 .menu {
-  padding: 1.1em;
+  padding: 0;
   background-color: rgba(228, 221, 228, 1);
   box-shadow: 3px 0 7px rgba(0, 0, 0, .3);
 }
@@ -44,6 +47,7 @@ body {
   position: relative;
   display: block;
   padding: 0 0.5em;
+  border-radius: 5px;
   color: rgb(36, 13, 57, 0.7);
   font-size: 2em;
   font-weight: 800;
@@ -55,10 +59,16 @@ body {
 
 .menu__link:hover {
   border-radius: 5px;
-  background-color: rgba(36, 13, 57, 1);
+  background-color: rgba(161, 149, 161, 0.5);
   color: white;
-  transform: scale(1.2);
 }
+
+.menu__link:active {
+  text-decoration: overline;
+  transition: 0ms;
+}
+
+/* Adaptive menu*/
 
 @media (max-width: 660px) {
   .menu__list {
@@ -69,6 +79,7 @@ body {
   .menu {
     padding: 1.1em 0 0 0;
     text-align: center;
+    font-size: 0.7em;
   }
 
   .menu__link {
@@ -79,5 +90,117 @@ body {
 @media (max-width: 600px) {
   .menu__item {
     display: block;
+  }
+}
+
+.fullscreen__bg {
+  position: relative;
+  z-index: 3;
+  padding-top: 45%;
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+
+}
+
+.fullscreen__bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.overlay h1 {
+  position: relative;
+  float: left;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 3.375em;
+  text-align: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.content p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .fullscreen__bg {
+    background: url('../images/main__donut.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen__bg__video {
+    display: none;
+  }
+
+  .overlay h1 {
+    font-size: 1.5em;
+  }
+}
+
+.gradient-button {
+  position: relative;
+  float: right;
+  overflow: hidden;
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px 20px;
+  border: 2px solid #BABBCE;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  background-size: 100%;
+  transition: .2s ease-in-out;
+}
+
+.gradient-button::before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+  height: 5.2em;
+  width: 1.7em;
+  position: absolute;
+  top: -0.4em;
+  left: -2.7em;
+  transform: skewX(-45deg);
+}
+
+.gradient-button:hover {
+  background: rgba(200, 166, 181, 0.5);
+  color: white;
+}
+
+.gradient-button:hover:before {
+  left: 6em;
+  transition: .5s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .overlay h1 {
+    font-size: 2em;
+  }
+
+  .gradient-button {
+    display: none;
   }
 }
