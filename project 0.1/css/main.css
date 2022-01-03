@@ -1,4 +1,4 @@
-@import url(fontawesome-all.min.css);
+@import url(all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
 
 * {
@@ -98,25 +98,6 @@ h6 a {
   border-bottom: 0;
 }
 
-h1 span,
-h2 span,
-h3 span,
-h4 span,
-h5 span,
-h6 span {
-  font-weight: 200;
-}
-
-h1.headline--bdr-bt,
-h2.headline--bdr-bt,
-h3.headline--bdr-bt,
-h4.headline--bdr-bt,
-h5.headline--bdr-bt,
-h6.headline--bdr-bt {
-  padding-bottom: 1em;
-  border-bottom: solid 2px rgba(255, 255, 255, 0.150);
-}
-
 h2 {
   font-size: 1.2em;
 }
@@ -177,16 +158,16 @@ a.special:not(.button):before {
 a.special:not(.button):before {
   display: inline-block;
   margin-right: 0.85em;
+  width: 2em;
   height: 2em;
   line-height: 1.75em;
   border-radius: 100%;
   border: solid 2px rgba(255, 255, 255, 0.125);
-  content: "\27F6";
+  content: "\f105";
   font-size: 1.25em;
   text-align: center;
   text-indent: 0.15em;
   vertical-align: middle;
-  width: 2em;
   transition: background-color 0.2s ease-in-out;
   -moz-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
@@ -224,6 +205,11 @@ ul {
 
 .fr {
   float: right;
+}
+
+.bdr-bt {
+  padding-bottom: 1em;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.150);
 }
 
 /* header */
@@ -535,7 +521,7 @@ ul {
 }
 
 .wrapper .wrapper__content {
-  padding: 3em 0 1em 0;
+  padding: 2em 0;
   margin: 0 auto;
   width: 55em;
 }
