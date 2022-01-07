@@ -1,41 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Donut's shop" />
     <title>Donut Art</title>
-    <link rel="stylesheet" href="css\main.css" />
+    <link rel="stylesheet" href="project 0.1\css\all.min.css">
+    <link rel="stylesheet" href="css\main.css" type="text/css" />
   </head>
-  <body class="page">
+  <body>
     <header class="header" id="header">
       <div class="header__navigation">
         <nav class="menu" id="navbar">
           <ul class="menu__list fr">
             <li class="menu__item">
-              <a class="menu__link" href="#" title="Information about who we are!">About us</a>
+              <a class="menu__link" href="#" title="Информация о том, кто мы такие!">О нас</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#" title="Our delicious menu">Menu</a>
+              <a class="menu__link" href="#" title="Наше вкусное меню">Меню</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#" title="Dessert Shop">Shop</a>
+              <a class="menu__link" href="#" title="Магазин десертов">Магазин</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#" title="Useful information">Blog</a>
+              <a class="menu__link" href="#" title="Полезная информация">Блог</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#" title="Contact us">Contacts</a>
+              <a class="menu__link" href="#" title="Свяжитесь с нами">Контакты</a>
             </li>
           </ul>
         </nav>
       </div>
-      <div class="header__video">
+      <div class="video-bg">
         <div class="overlay">
-          <p class="overlay__text animate__fadeInDown">We are a company of people — perfectly imperfect, where all of our differences are our strengths. Our mission is to provide more than just the best donuts and coffee possible.<br><br> We strive to have the most passionate, knowledgeable, and friendly team when it comes to providing out of this world service that helps inspire and bring communities together. </p>
+          <p class="overlay__text">We are a company of people — perfectly imperfect, where all of our differences are our strengths. Our mission is to provide more than just the best donuts and coffee possible.<br><br> We strive to have the most passionate, knowledgeable, and friendly team when it comes to providing out of this world service that helps inspire and bring communities together. </p>
         </div>
-          <video class="video-bg" loop muted autoplay poster="./images/main__donut.jpg">
+          <video class="header__video" loop muted autoplay poster="../project 0.1/images/main__donut.jpg">
               <source src="video\main__video.mp4" type="video/mp4">
               <source src="video\main__video--webm.webm" type="video/webm">
               <p>Your browser does not support HTML5 videos.</p>
@@ -43,9 +44,9 @@
       </div>
     </header>
     <main>
-      <article class="entry entry__container entry--theme_aquarel">
-        <h2 class="entry__headline headline--style--default headline--size-medium align-center">OUR STORY</h2>
-        <p class="entry__content">Chicago donut history was made in 2014.
+      <article class="paragraph" id="text">
+        <h2 class="align-center">OUR STORY</h2>
+        <p>Chicago donut history was made in 2014.
           Thats when Rich Labriola of Labriola Baking Company opened the first Stans Donuts & Coffee in Chicago, the result of a friendship and partnership formed years earlier with Stan Berman, founder of the iconic Los Angeles shop that bore his name.
           Today, there are multiple locations of Stans Donuts & Coffee in the Chicago area, serving a vast array of freshly made donuts, excellent coffee and whimsical experiences to a devoted community of donut lovers. Rich uses the same quality ingredients that he used in his bread, and that he uses at his other Doughboy Restaurant Group restaurants: fresh butter,
           Stop by Stans today to try a bakers dozen of our delectable donuts, incomparable coffee and tasty breakfast program.Chicago donut history was made in 2014.<br>
@@ -56,110 +57,17 @@
           Today, there are multiple locations of Stans Donuts & Coffee in the Chicago area, serving a vast array of freshly made donuts, excellent coffee and whimsical experiences to a devoted community of donut lovers. Rich uses the same quality ingredients that he used in his bread, and that he uses at his other Doughboy Restaurant Group restaurants: fresh butter,
           Stop by Stans today to try a bakers dozen of our delectable donuts, incomparable coffee and tasty breakfast program.</p>
       </article>
-    <section class="page__content">
-      <div class="wrapper">
-        <article class="features">
-          <a href="" class="features__image"><img src="images/pic01.jpg" alt="" /></a>
-          <div class="features__content align-right">
-            <h2 class="headline--style--default headline--size-medium bdr-bt">Tempus adipiscing</h2>
-            <p class="features__text">Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-            <a href="" class="link--special--modified link--style--white">Learn more</a>
+      <section class="wrapper style1">
+        <div class="wrapper__content">
+          <a href="" class="image">PICTURE<img src="" alt="" /></a>
+          <div class="content">
+            <h2 class="bdr-bt">Tempus adipiscing</h2>
+            <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
+            <a href="" class="special"></i>Learn more</a>
           </div>
-        </article>
-      </div>
-      <div class="wrapper wrapper--color--darkgray ">
-        <article class="features">
-          <a href="" class="features__image"><img src="images/pic01.jpg" alt="" /></a>
-          <div class="features__content align-left">
-            <h2 class="headline--style--default headline--size-medium bdr-bt">Tempus adipiscing</h2>
-            <p class="features__text">Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-            <a href="" class="link--special--modified link--style--white">Learn more</a>
-          </div>
-        </article>
-      </div>
-      <div class="wrapper">
-        <article class="features">
-          <a href="" class="features__image"><img src="images/pic01.jpg" alt="" /></a>
-          <div class="features__content align-right">
-            <h2 class="headline--style--default headline--size-medium bdr-bt">Tempus adipiscing</h2>
-            <p class="features__text">Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-            <a href="" class="link--special--modified link--style--white">Learn more</a>
-          </div>
-        </article>
-      </div>
-      <div class="wrapper wrapper--color--darkgray">
-        <article class="features">
-          <div class="features__content">
-            <h2 class="headline--style--default headline--size-medium bdr-bt">Tempus adipiscing</h2>
-            <p class="features__text">Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-            <section class="news">
-              <div class="inner__wrapper">
-              <article class="news__container news__item news__container--bg--dark">
-                <a href="#" class="news__image"><img class="image__item" src="images/cow.jpg" alt="image of news" /></a>
-                <h3 class="headline--style--author headline--size-small bdr-bt">Sed feugiat lorem</h3>
-                <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                <a href="#" class="news__link--block link--special--modified link--style--white">Learn more</a>
-              </article>
-              <article class="news__container news__item news__container--bg--dark">
-                <a href="#" class="news__image"><img class="image__item" src="images/cow.jpg" alt="image of news" /></a>
-                <h3 class="headline--style--author headline--size-small bdr-bt">Nisl placerat</h3>
-                <p class="news__text">Lorem ipsum dolor sit amet, consectetur vehicula id nulla dignissim dapibus ultrices.</p>
-                <a href="#" class="news__link--block link--special--modified link--style--white">Learn more</a>
-              </article>
-              <article class="news__container news__item news__container--bg--dark">
-                <a href="#" class="news__image"><img class="image__item" src="images/cow.jpg" alt="image of news" /></a>
-                <h3 class="headline--style--author headline--size-small bdr-bt">Ante fermentum</h3>
-                <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                <a href="#" class="news__link--block link--special--modified link--style--white">Learn more</a>
-              </article>
-              <article class="news__container news__item news__container--bg--dark">
-                <a href="#" class="news__image"><img class="image__item" src="images/cow.jpg" alt="image of news" /></a>
-                <h3 class="headline--style--author headline--size-small bdr-bt">Fusce consequat</h3>
-                <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                <a href="#" class="news__link--block link--special--modified link--style--white">Learn more</a>
-              </article>
-              <a href="#" class="link--style--white link--type--button" role="button">Browse All</a>
-            </div>
-            </section>
-          </div> 
-        </article>
+        </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="wrapper__footer">
-        <h2 class="headline--style--default headline--size-medium bdr-bt">Tempus adipiscing</h2>
-        <p class="footer__text">Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-        <form method="post" action="#" class="submit__form">
-          <div class="fields">
-            <div class="field">
-              <label for="name">Name</label>
-              <input type="text" name="name" class="form__input form__input--size--medium" required />
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input type="email" name="email" class="form__input form__input--size--medium" required />
-            </div>
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea class="form__input form__input--style" name="message" id="message" rows="5" required></textarea>
-            </div>
-          </div>
-          <input type="submit" value="Send Message" class="form__button">
-        </form>
-        <ul class="contact">
-          <li class="icon solid fa-home">
-            Untitled Inc<br />
-            1234 Somewhere Road Suite #2894<br />
-            Nashville, TN 00000-0000
-          </li>
-          <li class="icon solid fa-phone">(000) 000-0000</li>
-          <li class="icon solid fa-envelope"><a class="link--style--white" href="#">information@untitled.tld</a></li>
-          <li class="icon brands fa-twitter"><a class="link--style--white" href="#">twitter.com/untitled-tld</a></li>
-          <li class="icon brands fa-facebook-f"><a class="link--style--white" href="#">facebook.com/untitled-tld</a></li>
-          <li class="icon brands fa-instagram"><a class="link--style--white" href="#">instagram.com/untitled-tld</a></li>
-        </ul>
-      </div>
-    </footer>
     <script src="script/main.js"></script>
   </body>
 </html>
