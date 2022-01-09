@@ -19,7 +19,7 @@
   font-weight: 300;
   line-height: 1.65;
   vertical-align: baseline;
-  background-image: linear-gradient(to top, rgba(197, 201, 195, 0.3), rgba(36, 13, 57, 0.4)), url("../images/bg.jpg");
+  background-image: linear-gradient(to top, rgba(36,13,57,0.2), rgba(36, 13, 57, 0.4)), url("../images/bg.jpg");
   background-size: auto, cover;
   background-attachment: fixed, fixed;
   background-position: center, center;
