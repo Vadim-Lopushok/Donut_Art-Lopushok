@@ -141,6 +141,7 @@
   -moz-transition: background-color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out;
+  touch-action: manipulation;
 }
 
 .link--type--button:hover {
@@ -252,6 +253,7 @@ ul {
   line-height: 2.5em;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   transition: box-shadow .15s, transform .15s;
+  touch-action: manipulation;
   cursor: pointer;
 }
 
