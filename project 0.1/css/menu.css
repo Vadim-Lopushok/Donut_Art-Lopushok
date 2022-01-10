@@ -201,6 +201,7 @@ img {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  cursor: pointer;
 }
 
 .menu__btn:after {
