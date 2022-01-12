@@ -1,11 +1,12 @@
-.l-container {
-  margin-top: 2em;
-  margin-bottom: 1.5em;
+.cards {
+  font-size: 1rem;
 }
 
-.box__section {
+.cards__row {
   position: relative;
   display: flex;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
@@ -75,14 +76,14 @@
   transform: translateX(0);
 }
 
-.box__text {
+.box__content {
   position: relative;
   min-width: 320px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.counts__block {
+.counts__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,7 +135,7 @@ img {
   height: auto;
 }
 
-.box__text>h2 {
+.title__box {
   color: white;
   font-size: 2em;
   line-height: 1.2em;
@@ -142,11 +143,11 @@ img {
   text-align: center;
 }
 
-.box .box__text .counts__element p {
+.counts__element p {
   color: #ffffff;
   font-size: 18px;
   line-height: 1.4em;
-  font-family: "Source Sans Pro";
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 0.9px;
   padding: 10px 30px 0 30px;
 }
@@ -165,7 +166,7 @@ img {
 }
 
 @media (max-width: 980px) {
-  .box__text>h2 {
+  .title__box {
     padding-bottom: 30px;
   }
 }
@@ -178,14 +179,14 @@ img {
 }
 
 @media (max-width: 930px) {
-  .box .counts__block {
+  .counts__row {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
 }
 
-.menu__btn {
+.box__btn {
   position: relative;
   display: block;
   z-index: 1;
@@ -204,7 +205,7 @@ img {
   cursor: pointer;
 }
 
-.menu__btn:after {
+.box__btn:after {
   content: "";
   background-color: #a8385a75;
   width: 100%;
@@ -216,46 +217,46 @@ img {
   transition: 0.2s;
 }
 
-.menu__btn:hover:after {
+.box__btn:hover:after {
   top: 0px;
   left: 0px;
   background-color: #a83859;
 }
 
 @media (min-width: 768px) {
-  .menu__btn {
+  .box__btn {
     padding: 13px 50px 13px;
   }
 }
 
-.menu__btn--bgcolor--pink::after {
+.box__btn--bgcolor--pink::after {
   background-color: #c8a6b580;
 }
 
-.menu__btn--bgcolor--pink:hover:after {
+.box__btn--bgcolor--pink:hover:after {
   background-color: #c8a6b5;
 }
 
-.menu__btn--bgcolor--dppink::after {
+.box__btn--bgcolor--dppink::after {
   background-color: #e4dde480;
 }
 
-.menu__btn--bgcolor--dppink:hover:after {
+.box__btn--bgcolor--dppink:hover:after {
   background-color: #e4dde4;
 }
 
-.menu__btn--bgcolor--gray::after {
+.box__btn--bgcolor--gray::after {
   background-color: #c5c9c377;
 }
 
-.menu__btn--bgcolor--gray:hover:after {
+.box__btn--bgcolor--gray:hover:after {
   background-color: #c5c9c3;
 }
 
-.menu__btn--bgcolor--violet::after {
+.box__btn--bgcolor--violet::after {
   background-color: #240d3983;
 }
 
-.menu__btn--bgcolor--violet:hover:after {
+.box__btn--bgcolor--violet:hover:after {
   background-color: #240d39;
 }
