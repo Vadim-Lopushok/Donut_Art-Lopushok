@@ -33,6 +33,12 @@
   padding: 120px 0 110px;
 }
 
+@media screen and (max-width: 320px) {
+  .box {
+    width: 100%;
+  }
+}
+
 .box:nth-of-type(2) {
   background: url("../images/bgBoxTwo.jpg");
   background-size: cover;
@@ -150,6 +156,12 @@ img {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 0.9px;
   padding: 10px 30px 0 30px;
+}
+
+@media screen and (max-width: 320px) {
+  .counts__element p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 480px) {
