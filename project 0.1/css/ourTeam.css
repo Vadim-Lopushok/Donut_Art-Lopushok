@@ -1,21 +1,29 @@
+@import url(fontawesome.min.css);
+@import url(animate.css);
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
 .workers-section {
-  padding: 70px 0;
+  padding: 3.182em 0;
   background-color: #f4f5f9;
+}
+
+.workers-section--color--gray {
+  background-color: #cccdd1;
 }
 
 .wrap {
   margin: 0 auto;
+  padding: 0 .682em;
   min-width: 320px;
   max-width: 1200px;
-  padding: 0 15px;
 }
 
 .workers-section__title {
   margin: 0 auto;
-  padding: 10px;
+  padding: 0.455em;
   max-width: 980px;
   color: #6a6a6a;
-  font-size: 33px;
+  font-size: 1.5em;
   letter-spacing: 3px;
   font-weight: 700;
   text-transform: uppercase;
@@ -24,19 +32,19 @@
 }
 
 .workers-section p {
+  margin: 0 auto;
+  max-width: 980px;
   color: #999;
   line-height: 24px;
-  margin: 0 auto;
   text-align: center;
-  max-width: 980px;
   font-size: 18px;
 }
 
 .worker-section__text {
-  line-height: 1.42857;
   padding: 10px 0;
   color: #6c6c6c;
   font-weight: 400;
+  line-height: 1.43;
 }
 
 .workers-section__container {
@@ -50,9 +58,9 @@
 }
 
 .case-worker__left {
-  flex-basis: 665px;
   position: relative;
   z-index: 1;
+  flex-basis: 665px;
 }
 
 .ideas {
@@ -64,41 +72,52 @@
   box-sizing: border-box;
 }
 
-.ideas .ideas__icon {
+.ideas__icon {
+  position: relative;
   width: 127px;
   height: 127px;
-  background-color: #e74c3c;
   margin: 50px auto;
-  position: relative;
   clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 }
 
+.ideas__icon--color--red {
+  background-color: #D0091C;
+}
+
+.ideas__icon--color--bej {
+  background-color: #F8CFB2;
+}
+
+.ideas__icon--color--yellow {
+  background-color: #FADF41;
+}
+
 .ideas h2.ideas__title {
+  color: #6a6a6a;
   font-size: 18px;
   font-weight: 600;
-  color: #6a6a6a;
   letter-spacing: 1.35px;
   text-transform: uppercase;
   text-align: center;
 }
 
 .ideas .ideas__title::after {
-  content: "";
-  width: 41px;
-  height: 1px;
-  background-color: #888888;
-  border-bottom: 1px solid #e1e1e1;
   display: block;
   margin: 20px auto 0;
+  width: 41px;
+  height: 1px;
+  content: "";
+  background-color: #888888;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .ideas p {
-  font-size: 15px;
-  line-height: 24px;
+  padding: 10px;
   color: #6c6c6c;
   font-weight: 400;
+  font-size: 15px;
   letter-spacing: 1.05px;
-  padding: 10px;
+  line-height: 24px;
 }
 
 .case-worker__left.ideas p {
@@ -122,10 +141,9 @@
   0px 0px 0px 18px rgba(0, 0, 0, 0.2),
   6px 6px 8px 17px #555;
   visibility: hidden;
-
 }
 
-img {
+.workers-section img {
   max-width: 80%;
   height: auto;
 }
