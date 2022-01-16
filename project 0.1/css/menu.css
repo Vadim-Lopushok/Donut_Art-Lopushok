@@ -11,16 +11,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0;
   overflow-x: hidden;
   width: 100%;
 }
 
 .box {
   position: relative;
-  background: url("../images/bgBox.jpg");
   background-size: cover;
-  background-position: center, center;
+  background: url("../images/menu/bgBox.jpg") center, center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,27 +38,23 @@
 }
 
 .box:nth-of-type(2) {
-  background: url("../images/bgBoxTwo.jpg");
   background-size: cover;
-  background-position: center, center;
+  background: url("../images/menu/bgBoxTwo.jpg") center, center;
 }
 
 .box:nth-of-type(3) {
-  background: url("../images/bgBoxThree.jpg ") no-repeat;
   background-size: cover;
-  background-position: center, center;
+  background: url("../images/menu/bgBoxThree.jpg ") no-repeat center, center;
 }
 
 .box:nth-of-type(4) {
-  background: url("../images/bgboxFive.jpg");
   background-size: cover;
-  background-position: center, center;
+  background: url("../images/menu/bgboxFive.jpg") center, center;
 }
 
 .box:nth-of-type(5) {
-  background: url("../images/bgBoxSix.jpg");
   background-size: cover;
-  background-position: center, center;
+  background: url("../images/menu/bgBoxSix.jpg") center, center;
 }
 
 .box::before {
@@ -154,7 +148,7 @@ img {
   font-size: 18px;
   line-height: 1.4em;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  letter-spacing: 0.9px;
+  letter-spacing: 1px;
   padding: 10px 30px 0 30px;
 }
 
@@ -210,7 +204,6 @@ img {
   font-size: 18px;
   font-weight: 200;
   letter-spacing: 1px;
-  position: relative;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -230,8 +223,8 @@ img {
 }
 
 .box__btn:hover:after {
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   background-color: #a83859;
 }
 
