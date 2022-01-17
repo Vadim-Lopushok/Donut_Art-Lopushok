@@ -1,5 +1,9 @@
 @import url(fontawesome.min.css);
 
+:root {
+  --lightblue: #6AAFE7;
+}
+
 .blog-boxes {
   font-size: 1rem;
   background-color: var(--gray-color);
@@ -129,8 +133,8 @@
 }
 
 .link__item span {
-  position: relative;
   display: inline-block;
+  position: relative;
   transform: translateX(-200%);
   transition: all .6s linear;
 }
@@ -175,4 +179,139 @@
   }
 }
 
+/*Conception*/
 
+.conception {
+  width: 100%;
+  font-size: 1rem;
+  background-image: url("../images/blog/bgOne.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.conception__container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 0 0.25em 0.5em 0 rgb(0 0 0 / 25%);
+}
+
+.image {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.image.fit {
+  display: block;
+  margin: 0 0 2em 0;
+  width: 100%;
+}
+
+.image.main img {
+  width: 100%;
+}
+
+.image.main {
+  display: none;
+}
+
+.conception__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3em;
+  width: 35em;
+  height: 100%;
+  border-left: 0.3em solid;
+  border-color: var(--lightblue);
+  background: rgba(23, 24, 32, 0.9);
+  opacity: 1;
+}
+
+.conception__content p {
+  font-size: 1.1em;
+  margin-bottom: 2em;
+  text-align: justify;
+}
+
+.content__headline {
+  margin-bottom: 1em;
+  color: var(--lightblue);
+  font-size: 2em;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.content__headline:after {
+  display: block;
+  margin-top: 0.5em;
+  height: 0.1em;
+  max-width: 20em;
+  width: 50%;
+  background: var(--lightblue);
+  content: '';
+}
+
+.content__wrap>p {
+  position: relative;
+  margin-top: -1em;
+  font-size: 1.25em;
+  line-height: 1.7em;
+  color: #F9D682;
+}
+
+/* ADAPTIVE CONCEPTION */
+
+@media screen and (max-width: 1280px) {
+  .conception__content {
+    padding: 4em 2em;
+    width: 25em;
+    font-size: .8em;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .conception__container {
+    background-attachment: scroll;
+    height: auto;
+  }
+
+  .conception__content {
+    position: relative;
+    margin: 0 auto;
+    padding: 4em 2em 2em 2em;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    border-left: 0;
+    border-top: 0.3em solid var(--lightblue);
+  }
+
+  .content__headline:after {
+    margin: 0 auto;
+  }
+
+  .image.main {
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    max-height: 40vh;
+    max-width: 800vw;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .image.main {
+    max-height: 60vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image.main {
+    max-height: 50vh;
+  }
+}
