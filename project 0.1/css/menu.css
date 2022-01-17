@@ -17,18 +17,20 @@
 
 .box {
   position: relative;
-  background-size: cover;
-  background: url("../images/menu/bgBox.jpg") center, center;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 90%;
   margin: 50px 0;
+  padding: 120px 0 110px;
+  background: url("../images/menu/bgBox.jpg");
+  background-size: cover;
+  background-position: center, center;
+  background-repeat: no-repeat;
   border-radius: 0;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
   transform: translateX(400%);
   transition: transform 0.4s ease;
-  padding: 120px 0 110px;
 }
 
 @media screen and (max-width: 320px) {
@@ -38,23 +40,31 @@
 }
 
 .box:nth-of-type(2) {
+  background: url("../images/menu/bgBoxTwo.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background: url("../images/menu/bgBoxTwo.jpg") center, center;
+  background-position: center, center;
 }
 
 .box:nth-of-type(3) {
+  background: url("../images/menu/bgBoxThree.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background: url("../images/menu/bgBoxThree.jpg ") no-repeat center, center;
+  background-position: center, center;
 }
 
 .box:nth-of-type(4) {
+  background: url("../images/menu/bgboxFive.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background: url("../images/menu/bgboxFive.jpg") center, center;
+  background-position: center, center;
 }
 
 .box:nth-of-type(5) {
+  background: url("../images/menu/bgBoxSix.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background: url("../images/menu/bgBoxSix.jpg") center, center;
+  background-position: center, center;
 }
 
 .box::before {
