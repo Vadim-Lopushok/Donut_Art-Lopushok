@@ -38,7 +38,7 @@
   font-weight: 300;
   line-height: 1.65;
   vertical-align: baseline;
-  background-image: linear-gradient(to top, rgba(33, 33, 33, .6), rgba(33, 33, 33, .7)), url("../images/main/bg.jpg");
+  background-image: linear-gradient(to top, rgba(33, 33, 33, .6), rgba(33, 33, 33, .7)), url("../images/main/bg2.jpg");
   background-size: auto, cover;
   background-attachment: fixed, fixed;
   background-position: center, center;
@@ -332,7 +332,7 @@ ul {
   font-size: 1.1em;
   font-weight: 300;
   line-height: 1.65;
-  border: solid 2px rgba(66, 66, 70, .3);
+  border: solid 2px var(--silver-color);
   border-radius: 5px;
   background: rgba(255, 255, 255, .025);
   text-decoration: none;
@@ -379,7 +379,7 @@ ul {
   border-radius: 5px;
   font-size: 1em;
   height: 2.75em;
-  border: solid 2px rgba(66, 66, 70, .3);
+  border: solid 2px var(--silver-color);
   color: inherit;
   background: rgba(255, 255, 255, .013);
   text-decoration: none;
@@ -388,7 +388,7 @@ ul {
 
 .form__input:focus,
 .form__textarea:focus {
-  border-color: rgba(66, 66, 70, .6);
+  border-color: var(--cocoa-color);
 }
 
 .submit__form {
@@ -460,9 +460,9 @@ ul {
 
 .socials__item:hover:before {
   background-color: rgba(241, 241, 241, .8);
-  box-shadow: 0 0 5px rgba(33, 33, 33, .5) inset;
   border-color: rgba(33, 33, 33, 1);
   color: rgb(66, 66, 70);
+  box-shadow: 0 0 5px rgba(33, 33, 33, .5) inset;
 }
 
 .icon__brands::before {
@@ -527,7 +527,7 @@ ul {
 }
 
 .active {
-  color: red;
   border-top: 2px solid var(--darkgray-color);
+  color: red;
   border-radius: 0;
 }
