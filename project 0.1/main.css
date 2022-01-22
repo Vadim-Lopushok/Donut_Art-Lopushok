@@ -10,6 +10,18 @@
   --darkgray-color: rgb(33, 33, 33);
 }
 
+@font-face {
+  font-family: 'Manrope', sans-serif;
+  src: url(../webfonts/Manrope-Bold.ttf),
+    url(../webfonts/Manrope-ExtraBold.ttf),
+    url(../webfonts/Manrope-ExtraLight.ttf),
+    url(../webfonts/Manrope-Light.ttf),
+    url(../webfonts/Manrope-Medium.ttf),
+    url(../webfonts/Manrope-Medium.ttf),
+    url(../webfonts/Manrope-Regular.ttf),
+    url(../webfonts/Manrope-SemiBold.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
