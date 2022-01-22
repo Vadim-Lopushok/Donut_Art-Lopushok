@@ -136,6 +136,10 @@
 
 /*Catalog*/
 
+.catalog {
+  font-size: 1rem;
+}
+
 .catalog__card {
   position: relative;
   display: flex;
@@ -146,6 +150,7 @@
   max-height: 40em;
   min-height: 23em;
   width: auto;
+  font-size: 1.2em;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -267,19 +272,12 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1280px) {
   .catalog__card {
-    height: 20em;
-    width: 100% !important;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  .catalog__card {
-    padding: 3em 1.5em 1em 1.5em;
-    height: 16em;
-    max-height: none;
-    min-height: 0;
+    padding: 4em 3em 2em 3em;
+    height: 30vh;
+    max-height: 30em;
+    min-height: 20em;
   }
 }
 
@@ -287,14 +285,48 @@
   .catalog__card {
     display: block;
     width: 50% !important;
+    font-size: 1em;
+  }
+
+  .card__headline {
+    font-size: .9em;
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 736px) {
   .catalog__card {
-    padding: 4em 3em 2em 3em;
-    height: 30vh;
-    max-height: 30em;
-    min-height: 20em;
+    padding: 3em 1em 1em 1em;
+    height: 16em;
+    max-height: none;
+    min-height: 0;
+    font-size: 1.2em;
+  }
+
+  .card__headline {
+    font-size: .7em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .catalog__card {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .catalog__card {
+    height: 20em;
+    width: 100% !important;
+    font-size: 1.2em;
+  }
+
+  .card__headline {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .card__headline {
+    font-size: .7em;
   }
 }
