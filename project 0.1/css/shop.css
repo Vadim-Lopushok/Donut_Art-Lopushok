@@ -239,10 +239,6 @@
   z-index: 1;
 }
 
-.card__img {
-  display: none;
-}
-
 .card__content {
   position: relative;
   z-index: 3;
