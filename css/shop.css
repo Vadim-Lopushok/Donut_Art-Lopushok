@@ -317,7 +317,7 @@
   .catalog__card {
     height: 20em;
     width: 100% !important;
-    font-size: 1.2em;
+    font-size: .85em;
   }
 
   .card__headline {
