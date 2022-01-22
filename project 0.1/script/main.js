@@ -45,8 +45,8 @@ function wireUpTriggers() {
           : "true"
       );
       content.setAttribute(
-        "aria-hidden",
-        content.getAttribute("aria-hidden") === "true" ? "false" : "true"
+          "aria-hidden",
+          content.getAttribute("aria-hidden") === "true" ? "false" : "true"
       );
     });
   });

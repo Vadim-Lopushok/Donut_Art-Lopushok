@@ -1,3 +1,5 @@
+//MENU
+
 const currentLocation = location.href;
 const menuItem = document.querySelectorAll('.menu__link');
 const menuLenght = menuItem.length
@@ -6,6 +8,8 @@ for (let i = 0; i < menuLenght; i++) {
     menuItem[i].className = "active menu__link";
   }
 }
+
+// POPUP
 
 function onEntry(entry) {
   entry.forEach(change => {
@@ -19,7 +23,7 @@ let options = {
   threshold: [0.5]
 };
 let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll('.conception__content');
+let elements = document.querySelectorAll('.popup');
 
 for (let elm of elements) {
   observer.observe(elm);

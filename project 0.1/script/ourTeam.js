@@ -1,5 +1,18 @@
 "use strict";
 
+// MENU
+
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll('.menu__link');
+const menuLenght = menuItem.length
+for (let i = 0; i < menuLenght; i++) {
+  if (menuItem[i].href === currentLocation) {
+    menuItem[i].className = "active menu__link";
+  }
+}
+
+// ANIMATIONS CARDS
+
 $(window).scroll(function () {
   $("#portrait").each(function () {
     var imagePos = $(this).offset().top;
@@ -33,6 +46,8 @@ $(window).scroll(function () {
   });
 });
 
+// GALLERY
+
 const imgs = document.getElementById("imgs");
 const leftBtn = document.getElementById("left");
 const rightBtn = document.getElementById("right");
@@ -60,7 +75,7 @@ function changeImage() {
 
 function resetInterval() {
   clearInterval(interval)
-  interval = setInterval (run, 2000)
+  interval = setInterval(run, 2000)
 }
 
 rightBtn.addEventListener('click', () => {
@@ -74,12 +89,3 @@ leftBtn.addEventListener('click', () => {
   changeImage()
   resetInterval()
 })
-
-const currentLocation = location.href;
-const menuItem = document.querySelectorAll('.menu__link');
-const menuLenght = menuItem.length
-for (let i = 0; i<menuLenght; i++) {
-  if (menuItem[i].href === currentLocation) {
-    menuItem[i].className = "active menu__link";
-  }
-}
