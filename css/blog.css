@@ -119,7 +119,7 @@
   border: 1px solid var(--lightblue);
   color: var(--lightblue);
   background-color: transparent;
-  font-family: Calibri;
+  font-family: Calibri, serif;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -266,7 +266,6 @@
   font-size: 20px;
   letter-spacing: 1px;
   text-align: center;
-  text-align: center;
 }
 
 .forum__intro h2 {
@@ -315,7 +314,7 @@
   color: var(--darkgray-color);
   line-height: 1.2;
   font-size: 2.5em;
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 5 Free', serif;
   font-weight: 900;
   content: "";
 }

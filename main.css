@@ -12,14 +12,14 @@
 
 @font-face {
   font-family: 'Manrope', sans-serif;
-  src: url(../webfonts/Manrope-Bold.ttf),
-    url(../webfonts/Manrope-ExtraBold.ttf),
-    url(../webfonts/Manrope-ExtraLight.ttf),
-    url(../webfonts/Manrope-Light.ttf),
-    url(../webfonts/Manrope-Medium.ttf),
-    url(../webfonts/Manrope-Medium.ttf),
-    url(../webfonts/Manrope-Regular.ttf),
-    url(../webfonts/Manrope-SemiBold.ttf);
+  src: url(./webfonts/Manrope-Bold.ttf),
+    url(./webfonts/Manrope-ExtraBold.ttf),
+    url(./webfonts/Manrope-ExtraLight.ttf),
+    url(./webfonts/Manrope-Light.ttf),
+    url(./webfonts/Manrope-Medium.ttf),
+    url(./webfonts/Manrope-Medium.ttf),
+    url(./webfonts/Manrope-Regular.ttf),
+    url(./webfonts/Manrope-SemiBold.ttf);
 }
 
 * {
@@ -128,7 +128,7 @@ ul {
   line-height: 1;
   font-style: normal;
   font-variant: normal;
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 5 Free', serif;
   font-weight: 900;
 }
 
@@ -159,7 +159,7 @@ ul {
 /* header */
 
 .header {
-  margin: 1em auto;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -167,12 +167,12 @@ ul {
 
 .menu {
   position: relative;
+  z-index: 100;
   overflow: hidden;
   padding: 1em;
   margin: 0 auto;
   max-width: 60%;
-  background-color: var(--coffee-color);
-  box-shadow: 0 0 12px 4px rgba(34, 60, 80, .2);
+  text-align: center;
 }
 
 .menu::after {
@@ -296,7 +296,6 @@ ul {
   position: relative;
   z-index: 3;
   padding-top: 45%;
-  margin-top: 1em;
   overflow: hidden;
   height: auto;
   width: 100%;
@@ -930,7 +929,7 @@ ul {
 
 .socials__item::before {
   display: inline-block;
-  font-family: 'Font Awesome 5 Free';
+  font-family: 'Font Awesome 5 Free', serif;
   font-weight: 900;
 }
 
@@ -961,7 +960,7 @@ ul {
 }
 
 .icon__brands::before {
-  font-family: 'Font Awesome 5 Brands';
+  font-family: 'Font Awesome 5 Brands', serif;
 }
 
 .socials__link {
